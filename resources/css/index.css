@@ -1,6 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
 :root {
     --background-color: #faf7f2;
     --accent-color1: #d6cfc4;
     --accent-color2: #9caf88;
     --text-color: #2e2e2e;
 }
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--accent-color2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
