@@ -18,12 +18,13 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    margin: 0.5rem;
 }
 
 nav li {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
