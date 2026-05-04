@@ -88,3 +88,45 @@ button.cta {
     border: 1px solid var(--accent-color2);
     border-radius: 2px;
 }
+
+section.featured {
+    font-family: "Inter", sans-serif;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    height: auto;
+}
+
+section.featured h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto 1rem auto;
+    border-bottom: 1px solid var(--accent-color2);
+    width: 95%;
+}
+
+.featured-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured-item h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.featured-item p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+
+img {
+    width: 80%;
+    border-radius: 50%;
+}
