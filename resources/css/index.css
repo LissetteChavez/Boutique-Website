@@ -14,6 +14,8 @@
 body {
     font-family: 'Inter', 'Source Sans 3', sans-serif;
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
 }
 
 /*Heading Styles*/
@@ -40,12 +42,26 @@ nav ul{
 
 nav ul li {
     font-weight: bold;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+@media (min-width: 768px){
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+    nav ul li {
+        align-content: center;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+    }
+    
 }
 
 /*Main Section*/
@@ -54,6 +70,7 @@ main {
     position: relative;
     top: 3.2rem;
     width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -94,7 +111,7 @@ section.featured {
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
 }
 
 section.featured h2 {
@@ -129,4 +146,13 @@ section.featured h2 {
 img {
     width: 80%;
     border-radius: 50%;
+}
+
+/*Footer Section*/
+
+footer {
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    font-size: 0.8rem;
 }
