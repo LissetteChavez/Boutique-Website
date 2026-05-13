@@ -70,9 +70,11 @@ main {
     position: relative;
     top: 3.2rem;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0 auto;
 }
+
+/*Hero Section*/
 
 .hero {
     width: 100%;
@@ -102,16 +104,36 @@ button.cta {
     margin-top: 1rem;
     background: var(--accent-color2);
     color: var(--background-color);
-    border: 1px solid var(--accent-color2);
+    border: 2px solid var(--accent-color1);
     border-radius: 2px;
 }
+
+@media (min-width: 768px){
+    h1, .hero p, .hero button{
+        text-align: right;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .hero p {
+        font-size: 2rem;
+    }
+    button.cta {
+        font-size: 1.5rem;
+        position: relative;
+        left: 85%;
+    }
+}
+
+/*Featured Section*/
 
 section.featured {
     font-family: "Inter", sans-serif;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+
 }
 
 section.featured h2 {
@@ -148,11 +170,24 @@ img {
     border-radius: 50%;
 }
 
-/*Footer Section*/
+@media (min-width:768px){
+    img {
+        width: 40%;
+    }
+    .featured-item {
+        flex-direction: row;
+        padding: 1rem;
+    }
+    .tea-accessories{
+        flex-direction: row-reverse;
+    }
+}
 
+/*Footer Section*/
+/*
 footer {
     padding: 1rem;
-    position: relative;
-    bottom: 0;
     font-size: 0.8rem;
-}
+    border-top: 1px solid var(--accent-color2);
+    width: 100%;
+}*/
